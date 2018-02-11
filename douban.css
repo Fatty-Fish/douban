@@ -1,0 +1,1276 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background: #888;
+}
+
+.head .left {
+    position: absolute;
+    left: 0;
+    margin-top: 2px;
+}
+
+.head .left li {
+    float: left;
+    padding-left: 20px;
+}
+
+.head .left li a,
+.more {
+    color: #eee;
+    cursor: pointer;
+}
+
+.head .left li a:hover {
+    color: white;
+}
+
+.head .left li p:hover {
+    color: white;
+}
+
+.head .right {
+    position: absolute;
+    right: 0;
+    margin-top: 2px;
+}
+
+.head .right li {
+    float: left;
+    padding-right: 20px;
+}
+
+.head .right li a {
+    color: #eee;
+    cursor: pointer;
+}
+
+.head .right li:nth-of-type(1) a {
+    height: 40px;
+    display: inline-block;
+}
+
+.head .right li:nth-of-type(1) a+div {
+    position: absolute;
+    z-index: 99;
+    top: 23px;
+    left: -78px;
+    width: 252px;
+    height: 498px;
+    background-image: url(./qr.png);
+    border: 1px solid #e5ebe4;
+    visibility: hidden;
+}
+
+.head .right li:nth-of-type(1) a+div:hover {
+    visibility: visible;
+}
+
+.head .right li a:hover {
+    color: white;
+}
+
+.head .right li:nth-of-type(1) a:hover+div {
+    visibility: visible;
+}
+
+.nav {
+    width: 100%;
+    min-width: 1040px;
+    zoom: 1;
+    background: #f0f3ef;
+    margin-bottom: 40px;
+}
+
+.navf {
+    border-bottom: 1px solid #e5ebe4;
+}
+
+.search {
+    width: 1040px;
+    height: 56px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0 5px;
+    zoom: 1;
+}
+
+.search h1 {
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+    background-image: url(https://img3.doubanio.com/dae/accounts/resources/321e246/music/assets/lg_music_a12_2.png?s=1);
+    float: left;
+    height: 56px;
+    width: 145px;
+    margin: 0 13px 0 0;
+}
+
+.search h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 100em;
+}
+
+.nav .navf .search input {
+    float: left;
+    width: 470px;
+    margin-right: -3px;
+    margin-top: 10px;
+    color: #aaa;
+    background: #fff;
+    text-align: left;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.nav .navf .search .searchNav {
+    position: absolute;
+    left: 158px;
+    top: 52px;
+    z-index: 99;
+    width: 470px;
+    color: #ccc;
+    margin-right: -3px;
+    visibility: hidden;
+}
+
+.nav .navf .searchNav div {
+    width: 100%;
+    height: 51px;
+    background: white;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+}
+
+.nav .navf .searchNav div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav .navf .searchNav div:hover {
+    background: #ddd;
+}
+
+.nav .navf .searchNav div img {
+    float: left;
+    border: none;
+    width: 15%;
+    height: 100%;
+}
+
+.nav .navf .searchNav div a {
+    margin-left: 10px;
+    color: #2b1371
+}
+
+.nav .navf .searchNav div p {
+    height: 20px;
+    width: 360px;
+    margin-left: 80px;
+    color: #ccc;
+}
+
+.nav .navf .search .sousuo {
+    display: inline-block;
+    width: 40px;
+    height: 33px;
+    line-height: 77px;
+    overflow: hidden;
+    border: #eee;
+    background: #eee;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    background-image: url(https://img3.doubanio.com/dae/accounts/resources/321e246/music/assets/nav_mu_bg.png?s=1);
+}
+
+.nav .navs {
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.nav .navs ul {
+    margin: 9px 0;
+}
+
+.nav .navs ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.nav .navs ul li a {
+    color: #555d53;
+}
+
+.nav .navs ul li a:hover {
+    background: #000;
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 103px;
+    /*border: 1px solid black;*/
+}
+
+.wrapper #scroll {
+    position: relative;
+    height: 250px;
+    width: 675px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#scroll ul.demo {
+    position: absolute;
+    width: 10125px;
+}
+
+#scroll ul.demo::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#scroll ul.demo li {
+    float: left;
+    height: 100%;
+    width: 675px;
+}
+
+#scroll ul.demo li img {
+    width: 100%;
+}
+
+#scroll ul.point {
+    position: absolute;
+    bottom: 7px;
+    left: 265px;
+}
+
+#scroll ul.point li.active {
+    background: #999;
+}
+
+#scroll ul.point li {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+    margin-left: 10px;
+}
+
+#scroll ul.point li:hover {
+    background: #999;
+}
+
+#scroll p.right {
+    position: absolute;
+    left: 600px;
+    margin-top: 96px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 10;
+    background-image: url(http://r1.ykimg.com/0510000051AD63F56714C04A1305CFEF);
+}
+
+.wrapper .imgwrap {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.wrapper .imgwrap a img {
+    width: 100%;
+}
+
+.wrapper .popular {
+    width: 675px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.wrapper .popular ul {
+    border-bottom: 2px solid #02A682;
+}
+
+.wrapper .popular ul .artists {
+    display: inline-block;
+    font-size: 17px;
+    color: #222;
+    line-height: 30px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.wrapper .popular ul .new_artists {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+    cursor: pointer;
+}
+
+.wrapper .popular .artist {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #F5F7F8;
+    padding: 15px 0 0 30px;
+}
+
+.wrapper .popular .artist::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper .popular .artist .artist_item {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    width: 130px;
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.wrapper .artist .artist_item .normalLay {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #FFFFFF;
+    background-image: url(https://img3.doubanio.com/view/site/large/public/66a6727cbc9a723.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 0 1px #DFDCDC;
+    margin-bottom: 10px;
+}
+
+.wrapper .artist .artist_item .normalLay span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+    left: auto;
+    margin: -8px 0 0 -8px;
+    background: #222 !important;
+    opacity: 0.95;
+    border-radius: 100%;
+    text-align: center;
+    zoom: 1;
+}
+
+.wrapper .artist .artist_item .normalLay .hoverLay:hover+span {
+    background: #fff !important;
+}
+
+.wrapper .artist .artist_item .normalLay .hoverLay:hover+span i {
+    border-color: transparent transparent transparent #222;
+}
+
+.wrapper .artist .artist_item .normalLay span i {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    margin: 5px 0 0 2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.artist .artist_item a {
+    display: inline-block;
+    line-height: 100%;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #138A64;
+}
+
+.artist .artist_item a:hover {
+    background-color: #138A64;
+    color: white;
+}
+
+.artist .artist_item p.songs {
+    margin: 1px 0 18px 0;
+    color: #999;
+    text-align: center;
+}
+
+.wrapper .artist .artist_item .normalLay .hoverLay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    zoom: 1;
+    border: none;
+    height: 125px;
+    width: 125px;
+}
+
+.wrapper .artist .artist_item .normalLay .hoverLay:hover {
+    background: #333;
+    opacity: 0.85;
+}
+
+.artist .artist_item .hoverLay p {
+    display: none;
+    width: 100px;
+}
+
+.artist .artist_item .hoverLay:hover p {
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFF;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.wrapper .join {
+    position: absolute;
+    right: 0;
+    top: 280px;
+    margin-bottom: 30px;
+}
+
+.wrapper .join::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper .join .join_block {
+    float: left;
+    width: 98px;
+    margin-right: 2px;
+    height: 57px;
+    background-color: #F5F7F8;
+    text-align: center;
+}
+
+.wrapper .join .join_block p:nth-of-type(1) {
+    margin-top: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #02A682;
+}
+
+.wrapper .join .join_block p:nth-of-type(2) {
+    font-size: 15px;
+    color: #666;
+}
+
+.wrapper .join a {
+    background-color: #139D72;
+    height: 38px;
+    color: #FFF;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 63px;
+    border: 1px solid #138A64;
+    border-radius: 3px;
+}
+
+.wrapper .tag_block {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    top: 405px;
+}
+
+.wrapper .tag_block .left {
+    font-size: 15px;
+    color: #222;
+    float: left;
+}
+
+.wrapper .tag_block .right {
+    float: right;
+    font-size: 13px;
+    color: #999;
+    line-height: 22px;
+}
+
+.wrapper .tag_block .table {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.wrapper .tag_block .table .data {
+    display: block;
+    flex-grow: 1;
+    width: 104px;
+    height: 36px;
+    line-height: 36px;
+    color: #138A64;
+    font-size: 15px;
+    padding-left: 6px;
+    border-top: 1px solid #F8F6F6;
+    border-right: 1px solid #F8F6F6;
+}
+
+.wrapper .hotSongs {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    top: 640px;
+    margin-bottom: 40px;
+}
+
+.wrapper .hotSongs .hotHeader {
+    font-size: 15px;
+    color: #222;
+    line-height: 26px;
+    border-bottom: 1px solid #E4E2E2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.wrapper .hotSongs .hotHeader .open {
+    background: #139D72;
+    border: 1px solid #138A64;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #FFF;
+    line-height: 24px;
+    width: 88px;
+    height: 23px;
+    display: inline-block;
+    text-align: center;
+    float: right;
+}
+
+.wrapper .hotSongs .hotHeader .opener {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    margin: 8px 3px 0 2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.wrapper .hotSongs .hotHeader .open:hover {
+    background: #19cc94;
+}
+
+.wrapper .hotSongs .hotContent .section li {
+    float: left;
+}
+
+.wrapper .hotSongs .hotContent .section li:not([class="on"])::before {
+    content: "|";
+    color: #222;
+    padding: 0 3px;
+}
+
+.wrapper .hotSongs .hotContent .section li:nth-of-type(1) a {
+    color: #138A64;
+    font-weight: bolder;
+}
+
+.wrapper .hotSongs .hotContent .section li a {
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec {
+    margin-bottom: 40px;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec li {
+    position: relative;
+    padding-left: 60px;
+    list-style: none;
+    height: 60px;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec .avatar {
+    position: absolute;
+    left: 2px;
+    top: 30px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    line-height: 48px;
+    text-align: center;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec .avatar img {
+    width: 100%;
+    height: 100%
+}
+
+.wrapper .hotSongs .hotContent .artists_sec .avatar:hover .icon {
+    background: #333;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec .avatar:hover .icon i {
+    display: inline-block;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec .avatar .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec .avatar .icon i {
+    display: none;
+    zoom: 1;
+    vertical-align: top;
+    margin: 18px 0 0 2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec li h3 {
+    position: absolute;
+    top: 24px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: normal;
+    color: #138A64;
+    line-height: 14px;
+    padding: 12px 0 8px 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec li p {
+    position: absolute;
+    top: 56px;
+    font-size: 13px;
+    color: #999;
+    line-height: 13px;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec li .rank {
+    position: absolute;
+    height: 100%;
+    right: 10px;
+    top: 20px;
+    font-weight: normal;
+    font-size: 35px;
+    color: #E6E6E6;
+    line-height: 60px;
+}
+
+.wrapper .hotSongs .hotContent .artists_sec li:nth-of-type(10) .rank {
+    right: -5px;
+}
+
+.wrapper .switcher {
+    width: 675px;
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    background: #F5F7F8;
+    margin-bottom: 40px;
+    margin-top: 35px;
+}
+
+.wrapper .switcher .header {
+    background-color: white;
+    border-bottom: 2px solid #02A682;
+    position: relative;
+}
+
+.wrapper .switcher .header .title {
+    font-size: 17px;
+    color: #222;
+    margin-right: 1em;
+}
+
+.wrapper .switcher .header .section {
+    position: absolute;
+    top: 3px;
+    left: 55px;
+    margin-left: 18px;
+}
+
+.wrapper .switcher .header .section li {
+    float: left;
+}
+
+.wrapper .switcher .header .section li:not([class="on"])::before {
+    content: "|";
+    color: #222;
+    padding: 0 3px;
+}
+
+.wrapper .switcher .header .section li:nth-of-type(1) a {
+    color: #138A64;
+    font-weight: bolder;
+}
+
+.wrapper .switcher .header .section li a {
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+}
+
+.wrapper .switcher .header .more {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    line-height: 12px;
+    color: #999;
+}
+
+.wrapper .switcher .content {
+    padding: 15px 0px 15px 30px;
+    margin-bottom: -15px;
+    overflow: hidden;
+}
+
+.wrapper .switcher .content .album {
+    width: 24%;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wrapper .switcher .content .album .inner {
+    width: 135px;
+    display: inline-block;
+    text-align: left;
+}
+
+.wrapper .switcher .content .album .inner .cover {
+    height: 135px;
+    width: 135px;
+    overflow: hidden;
+}
+
+.wrapper .switcher .content .album .inner .cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .switcher .content .album .inner .tag {
+    display: inline-block;
+    font-size: 15px;
+    color: #138A64;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    background: transparent;
+    margin: 28px 0 6px 0;
+    padding: 0;
+}
+
+.wrapper .switcher .content .album .inner .tag:hover {
+    background: #138A64;
+    color: white;
+}
+
+.wrapper .switcher .content .album .inner p {
+    font-size: 13px;
+    color: #999;
+    line-height: 12px;
+    margin: 7px 0 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapper .switcher .content .album .inner .star {
+    line-height: 1;
+    margin-top: 6px;
+}
+
+.wrapper .switcher .content .album .inner .star .allStar {
+    float: left;
+    background-position: 0 -33px;
+    background-image: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png);
+    display: inline-block;
+    zoom: 1;
+    width: 55px;
+    height: 11px;
+    margin: 0 3px 0 0;
+    overflow: hidden;
+}
+
+.wrapper .switcher .content .album .inner .star .score {
+    color: #e09015;
+    margin: 1px 0 0 1px;
+    float: left;
+}
+
+.wrapper .side {
+    position: absolute;
+    right: 0;
+    top: 1324px;
+}
+
+.wrapper .rec_info {
+    position: relative;
+    width: 300px;
+    height: 365px;
+}
+
+.wrapper .rec_info .header {
+    color: #222;
+    border-bottom: 1px solid #E4E2E2;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 12px 0;
+    font-weight: normal;
+}
+
+.wrapper .rec_info .header span {
+    float: right;
+    padding-top: 4px;
+    font-size: 13px;
+    color: #666;
+}
+
+.wrapper .rec_info .content {
+    width: 330px;
+}
+
+.wrapper .rec_info .content .album {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wrapper .rec_info .content .album .inner {
+    width: 90px;
+    display: inline-block;
+    text-align: left;
+}
+
+.wrapper .rec_info .content .album .inner .cover {
+    height: 75px;
+    width: 71px;
+    overflow: hidden;
+}
+
+.wrapper .rec_info .content .album .inner .cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .rec_info .content .album .inner .tag {
+    display: inline-block;
+    font-size: 15px;
+    color: #138A64;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    background: transparent;
+    margin: 3px 0 10px 0;
+    padding: 0;
+}
+
+.wrapper .rec_info .content .album .inner .tag:hover {
+    background: #138A64;
+    color: white;
+}
+
+.wrapper .app {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 155px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.wrapper .app .entrance_link:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+.wrapper .app .entrance_link {
+    display: block;
+    position: relative;
+    padding: 10px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #4e4e4e;
+    background: #f1f1f1;
+}
+
+.wrapper .app .entrance_link:nth-of-type(1) .appImg {
+    background-position: -250px 0;
+}
+
+.wrapper .app .entrance_link .appImg {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 13px;
+    background: url(https://img3.doubanio.com/f/shire/76e762a8ca7a92cfd4afc3512d47f9e6f8a83706/pics/app/app_icons_50_8.jpg) no-repeat;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px #999;
+    -moz-box-shadow: 1px 1px 2px #999;
+    box-shadow: 1px 1px 2px #999;
+}
+
+.wrapper .app .entrance_link .main_title {
+    display: block;
+    color: #204d92;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 9px;
+}
+
+.wrapper .app .entrance_link .sub_title {
+    display: block;
+}
+
+.wrapper .app .entrance_link:nth-of-type(2) .appImg {
+    background-position: -50px;
+}
+
+.wrapper .mod {
+    margin: 0 0 40px;
+    position: relative;
+    width: 300px;
+    height: 150px;
+}
+
+.wrapper .mod div {
+    color: #222;
+    border-bottom: 1px solid #E4E2E2;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.wrapper .mod div a {
+    color: #666;
+    margin-left: 6px;
+    font-size: 13px;
+}
+
+.wrapper .mod ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 299px;
+}
+
+.wrapper .mod ul li {
+    flex-grow: 1;
+    width: 70px;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.wrapper .mod ul li span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://img3.doubanio.com/f/music/aa88ce89a854dde97b3b22505de0c77d1116b233/pics/music/home/home_artist.png);
+    margin: 0 auto 5px auto;
+}
+
+.wrapper .mod ul li a {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 12px;
+    color: #138A64;
+}
+
+.wrapper .last {
+    position: relative;
+    background: #F5F7F8;
+    width: 675px;
+    height: 520px;
+}
+
+.wrapper .last .header {
+    background-color: white;
+    border-bottom: 2px solid #02A682;
+    position: relative;
+}
+
+.wrapper .last .header .title {
+    font-size: 17px;
+    color: #222;
+    margin-right: 1em;
+}
+
+.wrapper .last .header .section {
+    position: absolute;
+    top: 3px;
+    left: 55px;
+    margin-left: 18px;
+}
+
+.wrapper .last .header .section li {
+    float: left;
+}
+
+.wrapper .last .header .section li:not([class="on"])::before {
+    content: "|";
+    color: #222;
+    padding: 0 3px;
+}
+
+.wrapper .last .header .section li:nth-of-type(1) a {
+    color: #138A64;
+    font-weight: bolder;
+}
+
+.wrapper .last .header .section li a {
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+}
+
+.wrapper .last .header .more {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    line-height: 12px;
+    color: #999;
+}
+
+.wrapper .last .content {
+    display: flex;
+    width: 675px;
+    flex-wrap: wrap;
+    padding: 15px 0px 15px 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.wrapper .last .content .program_item {
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 35%;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px 15px 0;
+}
+
+.wrapper .last .content .program_item .inner {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding: 16px 13px 16px 63px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 19px;
+}
+
+.wrapper .last .content .program_item .inner .cover {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.wrapper .last .content .program_item .inner .cover img {
+    width: 41px;
+    height: 41px;
+}
+
+.wrapper .last .content .program_item .inner .cover .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 41px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+}
+
+.wrapper .last .content .program_item:hover .inner .cover .icon {
+    background: #333;
+}
+
+.last .content .program_item:hover .inner .cover .icon .icon_play {
+    border-color: transparent transparent transparent #fff;
+}
+
+.last .content .program_item .inner .cover .icon .icon_play {
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-top: 15px;
+    display: inline-block;
+    zoom: 1;
+    border-color: transparent;
+    vertical-align: -1px;
+}
+
+.wrapper .content .program_item .inner .data_info {
+    background: transparent;
+    margin: 0;
+    font-size: 15px;
+    color: #138A64;
+    line-height: 15px;
+    white-space: nowrap;
+}
+
+.wrapper .content .program_item .inner .data_info span:nth-of-type(1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 184px;
+    color: #138A64;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.wrapper .content .program_item .inner .data_info span:nth-of-type(2) {
+    line-height: 14px;
+    vertical-align: top;
+    font-size: 13px;
+    color: #999;
+}
+
+.wrapper .content .program_item .inner .desc {
+    font-size: 13px;
+    color: #999;
+    line-height: 13px;
+}
+
+.wrapper .content .program_item .inner .desc span:nth-of-type(1) {
+    font-size: 13px;
+    color: #666;
+}
+
+.wrapper .content .program_item .inner .desc span:nth-of-type(2) {}
+
+.wrapper .content .program_item .inner .intro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.wrapper .advertisment {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    right: 0px;
+    bottom: 260px;
+}
+
+.wrapper .advertisment img {
+    width: 300px;
+    height: 250px;
+}
+
+.wrapper .advertisment .ad {
+    line-height: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    position: absolute;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .bottom {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    bottom: -102px;
+    border-top: 1px dashed #666;
+}
+
+.wrapper .bottom .left {
+    color: #999;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.wrapper .bottom .right {
+    position: absolute;
+    right: 0;
+    height: 20px;
+    line-height: 20px;
+    bottom: 2px;
+}
+
+.wrapper .bottom .right li {
+    display: inline-block;
+    color: #19cc94;
+    margin-right: 5px;
+}
+
+.wrapper .bottom .right li:hover {
+    color: white;
+    background-color: #138A64;
+}
