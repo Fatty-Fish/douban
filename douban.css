@@ -66,7 +66,7 @@
     left: -78px;
     width: 252px;
     height: 498px;
-    background-image: url(./qr.png);
+    background-image: url(./images/qr.png);
     border: 1px solid #e5ebe4;
     visibility: hidden;
 }
@@ -366,7 +366,7 @@
     overflow: hidden;
     cursor: pointer;
     background: #FFFFFF;
-    background-image: url(https://img3.doubanio.com/view/site/large/public/66a6727cbc9a723.jpg);
+    background-image: url("./images/m1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     border: 5px solid #FFFFFF;
@@ -1207,8 +1207,6 @@
     font-size: 13px;
     color: #666;
 }
-
-.wrapper .content .program_item .inner .desc span:nth-of-type(2) {}
 
 .wrapper .content .program_item .inner .intro {
     overflow: hidden;
