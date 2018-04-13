@@ -1005,7 +1005,9 @@
             index = 0,
             slider = 0;
 
-
+            // function aa (data) {
+            //     console.log(JSON.parse(data));
+            // }
         var manager = {
             init: function () {
                 this.makeShape();
@@ -1034,6 +1036,10 @@
                                 console.log(data);
                             }
                         })
+                        // var oScript = document.createElement("script");
+                        // oScript.src = "https://api.douban.com/v2/music/search?q="+ item + "&count=7" + "&jsoncallback=aa";
+                        // document.body.appendChild(oScript);
+
                     }
                 }
                 oInput.onblur = function () {
